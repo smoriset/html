@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>firstname</td>
+            <td><input type="text" name="textbox" id="textusername" placeholder="enter user name" /></td>
+        </tr>
+        <tr>
+            <td>lastname</td>
+            <td><input type="text" name="textbox" id="textlastname" placeholder="please enter lastname" /></td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td><input type="text" name="textbox" id="textgmail" placeholder="please enter your gmail "></td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td><input type="text" name="textbox" id="textpassword" placeholder="please enter password" /></td>
+        </tr>
+        <tr>
+            <td>confomation password</td>
+            <td><input type="text" name="textbox" id="textboxconformpassword" placeholder="please enter conformation password" /></td>
+        </tr>
+        <tr>
+            <td>birthday</td>
+            <td>
+                <select id="months">
+                    <option>---select month---</option>
+                    <option> january</option>
+                    <option> feb</option>
+                    <option> mar</option>
+                    <option> apr</option>
+                    <option> may</option>
+                    <option> jun</option>
+                    <option> july</option>
+                    <option> aug</option>
+                    <option> sep</option>
+                    <option>oct</option>
+                    <option>nov</option>
+                    <option>dec</option>
+                </select>
+
+                <input type="text" name="textbox" id="textdate" placeholder="day" />
+                <input type="text" name="textbox" id="textbox" placeholder="year" />
+            </td>
+        </tr>
+        <tr>
+            
+            <td>gender</td>
+            <td>
+                <select id="genderr">
+                    <option>male</option>
+                    <option>female</option>
+                    <option>other than</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>mobile number</td>
+            <td><input type="text" name="textbox" id="textmobile" placeholder="contact number" /></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="submit" onclick="validation()" />
+            </td>
+        </tr>
+    </table>
+        <script>
+           
+            function validation() {
+                var returnvalue=false;
+                var firstname = document.getElementById("textusername").value;
+                var lastname = document.getElementById("textlastname").value;
+                var email = document.getElementById("textgmail").value;
+                var password = document.getElementById("textpassword").value;
+
+                var emailexpresstion= /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            
+
+                if (firstname == '') {
+                    alert("please enter username");
+                }
+                else if (lastname == '') {
+                    alert("please enter last name");
+                }
+                else if (email !== '')
+                {
+                    if (!emailexpresstion.test(email)) {
+                        alert("please enter correct email");
+                    }
+                    
+                }
+                else {
+                    alert("please enter your email id");
+                }
+
+                return returnvalue;
+            }
+       
+        </script>
+      
+</body>
+</html>
