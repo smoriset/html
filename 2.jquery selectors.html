@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+        <p id="p2">symbol difines the query processing fee</p>
+        <h1> this is the second query procssing fee</h1>
+        <p id="p4"> this is the final statment</p>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <input type="button" value="hiding" id="buttonhide" />
+        <input type="button" value="show" id="button1hide" />
+        <input type="button" value="butt" id="button1check" />
+
+        <script>
+        $(document).ready(function () {
+        $("#buttonhide").click(function () {
+        $("#p2").hide();
+        });
+        $("#button1hide").mouseenter(function () {
+            alert("this mouseenter");
+        });
+        $("#button1check").dblclick(function () {
+        $(".p4").hide();
+        });
+        $("#button1check").dblclick(function () {
+        $("*").hide();
+        });
+        });
+        </script>
+    </body>
+</html>

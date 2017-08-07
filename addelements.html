@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input type="button" value="append" id="btnappend" />
+    <input type="button" value="prepend" id="btnprepend" />
+    <input type="button" value="after" id="btnafter" />
+    <input type="button" value="before" id="btnbefore" />
+    <div id="div1">
+        we have four approaches to add the elements in differnt places like
+        append
+        prepend
+    </div>
+
+<div id="div2">
+    the another 2 approaches are the 
+    after 
+    before
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#btnappend").click(function () {
+            $("#div1").append(" we are adding some other content");
+        });
+    });
+  /*  $(document).ready(function () {
+        $("#btnprepend").click(function () {
+            $("#div1").prepend("<p> first statement </p>");
+        });
+    });*/
+    $(document).ready(function () {
+        $("#btnafter").click(function () {
+            $("#div1").after(" see when it will added ");
+        });
+    });
+  /*  $(document).ready(function () {
+        $("#btnbefore").click(function () {
+            $("#div2").before("<p> see this is before when it will added </p>");
+        });
+    });*/
+
+</script>
+
+</body>
+</html>

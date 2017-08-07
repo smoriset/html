@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    function dropdownlist(listindex)
+    {
+    document.getElementById("ddlCity").options.length = 0;
+    switch (listindex)
+    {
+    case "Karnataka":
+    document.getElementById("ddlCity").options[0] = new Option("--select--", "");
+    document.getElementById("ddlCity").options[1] = new Option("Dharawad", "Dharawad");
+    document.getElementById("ddlCity").options[2] = new Option("Haveri", "Haveri");
+    document.getElementById("ddlCity").options[3] = new Option("Belgum", "Belgum");
+    document.getElementById("ddlCity").options[4] = new Option("Bijapur", "Bijapur");
+
+    break;
+
+    case "Tamilnadu":
+    document.getElementById("ddlCity").options[0] = new Option("--select--", "");
+    document.getElementById("ddlCity").options[1] = new Option("dgdf", "dgdf");
+    document.getElementById("ddlCity").options[2] = new Option("gffd", "gffd");
+
+
+    break;
+    }
+    <div>
+        <p>
+
+            <label id="lblCt">
+                <span class="red">*</span>
+                City:
+            </label>
+            <select id="ddlCity">
+                <!-- <option>--Select--</option>
+                 <option value="1">Dharawad</option>
+                 <option value="2">Belgum</option>
+                 <option value="3">Bagalkot</option>
+                 <option value="4">Haveri</option>
+                 <option>Hydrabadh</option>
+                 <option>Vijat vada</option>-->
+            </select>
+            <label id="lblCity"></label>
+        </p>
+    </div>
+
+    }
+</body>
+</html>

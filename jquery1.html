@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+<body>
+   <p>symbol difines the query processing fee</p>
+    <h1> this is the second query procssing fee</h1>
+    <h2> this is the final statment</h2>
+    <h3> this the mousedown</h3>
+    <h4>this the mouseleave</h4>
+    <h5>this is mouse</h5>
+    <h6>this is mouseup</h6>
+    
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("h1").click(function () {
+                    $(this).hide();
+                });
+                   $("p").dblclick(function () {
+                        $(this).hide();
+                    });
+                    $("h2").mousedown(function () {
+                        alert("enter your name");
+                    });
+                    $("h3").mouseenter(function () {
+                        alert("susi");
+                    });
+                    $("h4").mouseleave(function () {
+                        alert("jeevitha");
+                    });
+                    $("h5").mousemove(function () {
+                        alert("sreedevi");
+                    });
+                    $("h6").hover(function () {
+                        alert("you are in");
+                    },
+                    function(){
+                        alert("you are out")//this is hover The first function is executed when the mouse enters the HTML element, and the second function is executed when the mouse leaves the HTML element:
+                    });
+                  });
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .myclass{
+            background-color:yellow;
+            color:blue;
+            width:100px;
+            height:100px;
+            border:1px solid green;
+          
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="add class" id="btnaddclass" />
+    <input type="button" value="remove class" id="btnremoveclass" />
+    <input type="button" value="toggle class" id="btntoggleclass" />
+    <input type="button" value="css" id="btncss" />
+    <div>
+         this is how we are adding and removing the classes to div elements.
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#btnaddclass").click(function () {
+            $("div").addClass("myclass")
+        });
+        $("#btnremoveclass").click(function () {
+            $("div").removeClass("myclass")
+        });
+        $("#btntoggleclass").click(function () {
+            $("div").toggleClass("myclass")
+        });
+        $("#btncss").click(function () {
+            $("div").css({'background-color':'pink','font-size':'20px'});
+       }); 
+    });
+</script>
+
+</body>
+</html>

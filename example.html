@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <select id="source" name="source">
+        <option>MANUAL</option>
+        <option>ONLINE</option>
+    </select>
+    <select id="status" name="status"></select>
+    <script>
+            $(document).ready(function () {
+            var option = document.getElementById("status").options;
+            if (document.getElementById('source').value == "MANUAL") {
+                $("#status").append('<option>OPEN</option>');
+                $("#status").append('<option>DELIVERED</option>');
+                }
+            if (document.getElementById('source').value == "ONLINE") {
+                $("#status").append('<option>OPEN</option>');
+                $("#status").append('<option>DELIVERED</option>');
+                $("#status").append('<option>SHIPPED</option>');
+                }
+            });
+    </script>
+</body>
+</html>

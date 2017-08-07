@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <style>
+        #div1{
+            background-color:pink;
+            border:10px solid brown;
+            font-family:'Times New Roman';
+            display:none;
+        }
+    </style>
+  
+</head>
+<body>
+    <input type="button" value="fadeto" id="btonfadeto" />
+    <div id="div1">
+        this is the jquery effects
+        we have 4 jquery effects
+        fadein()
+        fadeout
+        fadetoggle
+        fadeto
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#btonfadeto").click(function () {
+          $("#div1").fadeTo(4000,1,susi)
+        });
+
+    });
+    function susi() {
+        alert("this is an alert box");
+    }
+
+</script>
+
+</body>
+</html>

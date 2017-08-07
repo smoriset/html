@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    
+    <title></title>
+</head>
+<body>
+    <input type="button" value="animation" id="butonanimation" />
+    <input type="button" value="stop" id="buttonstop" />
+    <div id="div1" style="background-color:green; width:500px; height:600px; position:absolute;">
+        fdjas;kfddkfj;ajdskfjakdjfkasj;fjasdkjf;asjfkdjsafja
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        $("#butonanimation").click(function () {
+            $("#div1").animate({left:'700px',width:'700px',color:'pink'},6000,susi)
+        });
+
+        $("#buttonstop").click(function () {
+            $("#div1").stop();
+        });
+
+    });
+    function susi() {
+        alert("this is an alert box");
+    }
+    </script>
+</body>
+</html>
